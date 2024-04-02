@@ -16,6 +16,7 @@ import Travel from "./pages/Travel";
 import Personal from "./pages/Personal";
 import Ndibe from "./pages/Ndibe";
 import Afikpo from "./pages/Afikpo";
+import Pictures from "./pages/Pictures";
 
 function App() {
   const imageDetails = {
@@ -48,6 +49,7 @@ function App() {
               <Route exact path="/personal" render={() => <Personal />} />
               <Route exact path="/ndibe" render={() => <Ndibe />} />
               <Route exact path="/afikpo" render={() => <Afikpo />} />
+              <Route exact path="/pictures" render={() => <Pictures />} />
             </Switch>
           </AnimatePresence>
         )}

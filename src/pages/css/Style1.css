@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+
 .exhibition-wrapper {
   display: flex;
   /* i changed justify content to space-evenly */
@@ -9,7 +11,7 @@
   /* animation: image-appear 0.01s linear forwards; */
   /* animation-delay: 2s; */
 }
-.exhibition-container--element {
+/* .exhibition-container--element {
   display: flex;
   width: 600px;
   height: 600px;
@@ -20,26 +22,12 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-}
+} */
 
-.exhibition-container--element span {
-  position: absolute;
-  text-transform: uppercase;
-  color: black;
-  top: 39rem;
-}
-
-.exhibition-polaroid h2 {
-  margin-bottom: 10px;
-}
-
-.model-info {
+.main-content {
+  text-align: left;
   position: relative;
-}
-
-.exhibition-content {
-  text-align: center;
-  position: relative;
+  margin-left: 5rem;
   margin-bottom: 2rem;
   top: 8rem;
   /* display: flex;
@@ -51,63 +39,57 @@
     align-items: center; */
 }
 
-.ig-model {
-  align-items: center;
-  margin-bottom: 20px;
-}
-.exhibition-content div a > svg {
-  margin-bottom: 1rem;
-}
-
-.exhibition-content h1 {
+.main-content h1 {
   font-size: 5rem;
+  font-family: "Anton";
   /* margin: 10 2rem; */
   color: black;
   align-items: center;
   margin-bottom: 1rem;
   /* margin-top: calc(90px + 50px); */
 }
-.exhibition-content p {
-  font-size: 1rem;
-  font-weight: 400;
-  text-transform: uppercase;
-  margin-bottom: 2rem;
-  color: black;
+
+#one {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  grid-auto-rows: minmax(100px, auto);
+  margin-bottom: 5rem;
 }
 
-/* Media Queries */
-@media only screen and (max-width: 600px) {
-  .Main-container {
-    grid-template-columns: auto;
-    margin-left: 10px;
-    height: auto;
-  }
-  .exhibition-content h1 {
-    font-size: 3.5rem;
-  }
-
-  img {
-    width: 100%;
-    height: auto;
-  }
+#one p.number {
+  font-weight: 500;
+  font-size: 4rem;
+  text-align: center;
+  font-family: "Anton";
 }
 
-@media only screen and (max-width: 600px) {
-  .exhibition-container {
-    grid-template-columns: auto;
-    margin-left: 0;
-    margin-right: 0;
-    height: auto;
-  }
-
-  img {
-    width: 100%;
-    height: auto;
-  }
+#img img.ihu {
+  object-fit: contain;
+  height: 300px;
+  width: 400px;
 }
 
-@media only screen and (min-width: 1025px) {
-  .exhibition-container {
-    margin-left: 20px;
-  }
+#img p {
+  margin-left: 210px;
+  font-family: "Anton";
+}
+
+.location_title {
+  position: absolute;
+  font-family: "Anton";
+  /* top: 35px; */
+  right: 20rem;
+}
+
+.location_id {
+  position: absolute;
+  font-family: "Anton";
+  /* top: 35px; */
+  right: 1rem;
+}
+
+.location_id span {
+  margin-left: 16px;
+  bottom: 10rem;
 }

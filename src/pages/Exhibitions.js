@@ -1,4 +1,5 @@
 import React from "react";
+
 import { Link } from "react-router-dom";
 import exb1 from "../images/mask2.jpg";
 import {
@@ -15,54 +16,48 @@ import "./css/Style1.css";
 
 const exhibitions = () => {
   return (
-    <div className="exhibition-content">
+    <div className="main-content">
       <div>
         <h1>EXHIBITIONS</h1>
-        <Link
-          className="ig-model"
-          to="https://www.instagram.com/365da.ze/?igsh=MXJxNWFiZDBiaHo0aQ%3D%3D&utm_source=qr"
-        >
-          <FaInstagram
-            size={30}
-            style={{ color: "#000000", marginRight: "2rem" }}
-          />
-        </Link>
-        {/* <p>
-          <b>
-            HEIGHT: 192 CM COLOR: NOIR EYES: BLACK WAIST: 32 CM CHEST: 32 CM
-            SHOE:45
-          </b>
-        </p> */}
-        <div className="exhibition-wrapper">
-          <Link to="/Ihunanya">
-            <div
-              className="exhibition-container--element"
-              alt="ihunanya"
-              style={{ backgroundImage: `url(${exb1})`, objectFit: "contain" }}
-            >
-              <span>ịhụnanya</span>
-            </div>
-          </Link>
-
-          {/* <Link to="/Ihunanya">
-            <div
-              className="exhibition-container--element"
-              alt="ihunanya"
-              style={{ backgroundImage: `url(${exb1})`, objectFit: "contain" }}
-            >
-              <span>ịhụnanya</span>
-            </div>
-          </Link>
-
-          <Link to="/Ihunanya">
-            <div
-              className="exhibition-container--element"
-              alt="ihunanya"
-              style={{ backgroundImage: `url(${exb1})`, objectFit: "contain" }}
-            >
-              <span>ịhụnanya</span>
-            </div>
-          </Link> */}
+      </div>
+      <div className="no-contain">
+        <div id="one">
+          <p className="number">01</p>
+          <p className="text">
+            Derived from the Igbo word meaning "to love," Ihunanya embodies the
+            profound connection between seeing and being loved. <br /> In a
+            world where visibility is often equated with validation and
+            understanding, this exhibition seeks to illuminate the beauty and
+            significance of being seen. <br /> Through captivating imagery and
+            evocative storytelling, Ihunanya invites viewers on a journey of
+            discovery and connection, where each photograph <br />
+            becomes a testament to the power of love and appreciation.
+          </p>
+          <div id="img">
+            <Link to="/Ihunanya">
+              <img src={exb1} alt="ihunanya" className="ihu" />
+            </Link>
+            <p>IHUNANYA '24</p>
+          </div>
+        </div>
+        <div id="one">
+          <p className="number">02</p>
+          <p className="text">
+            Derived from the Igbo word meaning "to love," Ihunanya embodies the
+            profound connection between seeing and being loved. <br /> In a
+            world where visibility is often equated with validation and
+            understanding, this exhibition seeks to illuminate the beauty and
+            significance of being seen. <br /> Through captivating imagery and
+            evocative storytelling, Ihunanya invites viewers on a journey of
+            discovery and connection, where each photograph <br />
+            becomes a testament to the power of love and appreciation.
+          </p>
+          <div id="img">
+            <Link to="/Ihunanya">
+              <img src={exb1} alt="ihunanya" className="ihu" />
+            </Link>
+            <p>IHUNANYA '24</p>
+          </div>
         </div>
       </div>
     </div>

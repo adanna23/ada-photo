@@ -10,6 +10,7 @@ import Ihunanya from "../pages/Ihunanya";
 import Travel from "../pages/Travel";
 import Ndibe from "../pages/Ndibe";
 import Afikpo from "../pages/Afikpo";
+import Pictures from "../pages/Pictures";
 
 const AnimRoutes = () => {
   return (
@@ -22,6 +23,7 @@ const AnimRoutes = () => {
       <Route path="/travel" elements={<Travel />} />
       <Route path="/ndibe" elements={<Ndibe />} />
       <Route path="/afikpo" elements={<Afikpo />} />
+      <Route path="/pictures" elements={<Pictures />} />
     </Switch>
   );
 };
